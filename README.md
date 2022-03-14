@@ -6,3 +6,7 @@ sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python
 git clone --recursive https://github.com/zeek/zeek <br />
 cd zeek <br /> 
 ./configure && make && sudo make install <br />
+export PATH="$PATH:/usr/local/zeek/bin" 
+## 2. Test <br/>
+zeek-cut < conn.log
+
